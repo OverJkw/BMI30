@@ -51,11 +51,17 @@
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="QCe-k2-lDY"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in kg" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PvJ-d7-Z8y">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="TVm-jh-QU9"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzt-Aw-obe">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -100,18 +106,18 @@
                                         <exclude reference="CDZ-b1-NaN"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="KSv-7m-qXY"/>
-                                        <exclude reference="cHO-WF-4iD"/>
-                                        <exclude reference="kNV-fD-rTB"/>
                                         <exclude reference="hhn-nH-f62"/>
                                         <exclude reference="kfO-e2-Vbs"/>
                                         <exclude reference="saT-Uq-QaC"/>
                                         <exclude reference="4Qb-CD-2Vc"/>
                                         <exclude reference="eCc-kp-Hsp"/>
                                         <exclude reference="ryX-jN-ccH"/>
+                                        <exclude reference="KSv-7m-qXY"/>
                                         <exclude reference="0da-nC-q1D"/>
                                         <exclude reference="9Et-e2-eu9"/>
                                         <exclude reference="Rrn-SW-Z1u"/>
+                                        <exclude reference="cHO-WF-4iD"/>
+                                        <exclude reference="kNV-fD-rTB"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -123,18 +129,18 @@
                                         <include reference="CDZ-b1-NaN"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="KSv-7m-qXY"/>
-                                        <include reference="cHO-WF-4iD"/>
-                                        <include reference="kNV-fD-rTB"/>
                                         <include reference="hhn-nH-f62"/>
                                         <include reference="kfO-e2-Vbs"/>
                                         <include reference="saT-Uq-QaC"/>
                                         <include reference="4Qb-CD-2Vc"/>
                                         <include reference="eCc-kp-Hsp"/>
                                         <include reference="ryX-jN-ccH"/>
+                                        <include reference="KSv-7m-qXY"/>
                                         <include reference="0da-nC-q1D"/>
                                         <include reference="9Et-e2-eu9"/>
                                         <include reference="Rrn-SW-Z1u"/>
+                                        <include reference="cHO-WF-4iD"/>
+                                        <include reference="kNV-fD-rTB"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -195,6 +201,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="bmiLabel" destination="lzt-Aw-obe" id="qGR-hE-7dM"/>
+                        <outlet property="heightTextField" destination="GxK-1Y-Jjf" id="7Mf-Qj-yAz"/>
+                        <outlet property="weightTextField" destination="PvJ-d7-Z8y" id="hYM-dh-Ddx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
